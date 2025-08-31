@@ -14,7 +14,8 @@
     "scripts": {
         "build": "tsc -p tsconfig.json",
         "lint": "eslint \"nodes/**/*.ts\" \"credentials/**/*.ts\"",
-        "format": "prettier --write ."
+        "format": "prettier --write .",
+        "test": "tsc -p tsconfig.json --noEmit"
     },
     "devDependencies": {
         "@types/node": "^20.14.9",
