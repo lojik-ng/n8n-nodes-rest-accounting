@@ -1,0 +1,37 @@
+{
+    "name": "n8n-nodes-rest-accounting",
+    "version": "0.1.0",
+    "description": "n8n community nodes for Rest Accounting API",
+    "keywords": [
+        "n8n-community-node-package"
+    ],
+    "license": "MIT",
+    "author": "",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "lint": "eslint \"nodes/**/*.ts\" \"credentials/**/*.ts\"",
+        "format": "prettier --write ."
+    },
+    "devDependencies": {
+        "@types/node": "^20.14.9",
+        "eslint": "^8.57.0",
+        "prettier": "^3.3.3",
+        "typescript": "^5.6.2"
+    },
+    "dependencies": {
+        "n8n-core": "^1.42.1",
+        "n8n-workflow": "^1.42.1"
+    },
+    "n8n": {
+        "credentials": [
+            "dist/credentials/RestAccountingApi.credentials.js"
+        ],
+        "nodes": [
+            "dist/nodes/RestAccounting/RestAccounting.node.js"
+        ]
+    }
+}
