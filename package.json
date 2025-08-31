@@ -1,6 +1,6 @@
 {
     "name": "n8n-nodes-rest-accounting",
-    "version": "0.1.5",
+    "version": "0.1.7",
     "description": "n8n community nodes for Rest Accounting API",
     "keywords": [
         "n8n-community-node-package"
@@ -23,9 +23,9 @@
         "prettier": "^3.3.3",
         "typescript": "^5.6.2"
     },
-    "dependencies": {
-        "n8n-core": "^1.42.1",
-        "n8n-workflow": "^1.42.1"
+    "peerDependencies": {
+        "n8n-workflow": "^1.42.1",
+        "n8n-core": "^1.42.1"
     },
     "n8n": {
         "credentials": [
